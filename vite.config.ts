@@ -16,11 +16,11 @@ export default defineConfig({
       algorithm: "gzip", //压缩算法
       ext: ".gz", //文件类型
     }),
-    visualizer(),
     viteMockServe({
       mockPath: "./src/mock/", // 指向mock下的文件
       localEnabled: true // 是否开启开发环境
     }),
+    visualizer(),
   ],
   resolve: {
     alias: [
